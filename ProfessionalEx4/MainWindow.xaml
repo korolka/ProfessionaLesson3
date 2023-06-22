@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProfessionalEx4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Loaded="Window_Loaded"
+        xmlns:local="clr-namespace:ProfessionalEx4"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="199*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <xctk:ColorPicker
+           Name="ColorPicker"
+            Margin="47,81,344,297"
+            DisplayColorAndName="True"
+            SelectedColorChanged="ColorPicker_SelectedColorChanged"/>
+        <Button Content="Save color" HorizontalAlignment="Left" Margin="530,75,0,0" VerticalAlignment="Top" Height="68" Width="150" Click="Button_Click" FontSize="20"/>
+        <Label x:Name="label1" Content="Color" HorizontalAlignment="Left" Margin="540,248,0,0" VerticalAlignment="Top" Height="46" Width="229" FontSize="20"/>
+        <DatePicker HorizontalAlignment="Left" Margin="-115,253,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
